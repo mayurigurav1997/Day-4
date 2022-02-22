@@ -10,12 +10,16 @@ for(let key1 in obj1){
     }
 }
 console.log(Object.keys(obj1).length===count?"Equal":"Not Equal");
+Output
+Equal
 
 //OR
 let _ = require('lodash');
 var obj1 = { name: "Person 1", age:5 };
 var obj2 = { age:5, name: "Person 1" };
 console.log(_.isEqual(obj1, obj2));
+Output
+true
 
 //2. display all the country flags in console
 var xhr=new XMLHttpRequest();      //Create  XMLHttpRequest  object
